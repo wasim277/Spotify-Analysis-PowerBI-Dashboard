@@ -2,7 +2,7 @@
 
 ![Main Dashboard Screenshot](screenshots/Home.png)
 
-[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-Click_Here-1DB954?style=for-the-badge&logo=powerbi)](https://YOUR_GITHUB_USERNAME.github.io/Solo-PowerBI-Project/)
+[![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-Click_Here-1DB954?style=for-the-badge&logo=powerbi)](https://wasim277.github.io/Spotify-Analysis-PowerBI-Dashboard/)
 
 ---
 
