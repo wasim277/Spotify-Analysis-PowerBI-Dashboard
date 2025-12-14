@@ -1,6 +1,23 @@
 # Spotify Analytics Dashboard
 
-![Main Dashboard Screenshot](screenshots/Home.png)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/Home.png" alt="Home Page" style="width:100%;">
+    </td>
+    <td width="50%">
+      <img src="screenshots/Overview.png" alt="Overview Page" style="width:100%;">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/Artists.png" alt="Artists Page" style="width:100%;">
+    </td>
+    <td width="50%">
+      <img src="screenshots/Songs.png" alt="Songs Page" style="width:100%;">
+    </td>
+  </tr>
+</table>
 
 [![View Live Dashboard](https://img.shields.io/badge/View_Live_Dashboard-Click_Here-1DB954?style=for-the-badge&logo=powerbi)](https://wasim277.github.io/Spotify-Analysis-PowerBI-Dashboard/)
 
