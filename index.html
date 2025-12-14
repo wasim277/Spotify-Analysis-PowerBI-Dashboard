@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Analytics Dashboard</title>
+    <style>
+        :root {
+            --spotify-black: #191414;
+            --spotify-green: #1DB954;
+            --spotify-white: #FFFFFF;
+            --spotify-grey: #535353;
+        }
+        
+        body {
+            background-color: var(--spotify-black);
+            color: var(--spotify-white);
+            font-family: 'Circular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: var(--spotify-green);
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .dashboard-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 80vh;
+            background-color: var(--spotify-grey);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #b3b3b3;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer a {
+            color: var(--spotify-green);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Spotify Analytics Dashboard</h1>
+
+    <div class="dashboard-container">
+        <iframe 
+            title="Spotify Dashboard" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiZDlmYTFkNzctM2RlNS00Y2QzLWI1OTktMzEyMGUwYjE3NTQ1IiwidCI6IjVkZjdiZmU4LWM2NmUtNDQ2NS05YTZiLTc2MzZmZDVjNmRkOCIsImMiOjZ9" 
+            frameborder="0" 
+            allowFullScreen="true">
+        </iframe>
+    </div>
+
+    <div class="footer">
+        <p>Built with Power BI • <a href="https://github.com/YOUR_USERNAME/Solo-PowerBI-Project">View Source on GitHub</a></p>
+    </div>
+
+</body>
+</html>
