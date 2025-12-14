@@ -70,12 +70,19 @@
 
     <div class="dashboard-container">
         <iframe 
+            id="powerbi-dashboard"
             title="Spotify Dashboard" 
-            src="https://app.powerbi.com/view?r=eyJrIjoiZDlmYTFkNzctM2RlNS00Y2QzLWI1OTktMzEyMGUwYjE3NTQ1IiwidCI6IjVkZjdiZmU4LWM2NmUtNDQ2NS05YTZiLTc2MzZmZDVjNmRkOCIsImMiOjZ9" 
             frameborder="0" 
             allowFullScreen="true">
         </iframe>
     </div>
+
+    <script>
+        // Add cache-busting parameter to ensure latest dashboard version loads
+        const dashboardUrl = "https://app.powerbi.com/view?r=eyJrIjoiZDlmYTFkNzctM2RlNS00Y2QzLWI1OTktMzEyMGUwYjE3NTQ1IiwidCI6IjVkZjdiZmU4LWM2NmUtNDQ2NS05YTZiLTc2MzZmZDVjNmRkOCIsImMiOjZ9";
+        const iframe = document.getElementById('powerbi-dashboard');
+        iframe.src = dashboardUrl + '&t=' + new Date().getTime();
+    </script>
 
     <div class="footer">
         <p>Built with Power BI • <a href="https://github.com/wasim277/Spotify-Analysis-PowerBI-Dashboard">View Source on GitHub</a></p>
