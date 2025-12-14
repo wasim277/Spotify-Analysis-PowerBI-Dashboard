@@ -78,23 +78,13 @@
     </div>
 
     <script>
-        // Power BI dashboard URL - update this if you get a new embed URL from Power BI
-        const baseUrl = "https://app.powerbi.com/view?r=eyJrIjoiZDlmYTFkNzctM2RlNS00Y2QzLWI1OTktMzEyMGUwYjE3NTQ1IiwidCI6IjVkZjdiZmU4LWM2NmUtNDQ2NS05YTZiLTc2MzZmZDVjNmRkOCIsImMiOjZ9";
-        
-        // Add parameters to ensure it starts on home page and resets filters
-        // You may need to replace "Home" with your actual home page name from Power BI
-        const dashboardUrl = baseUrl + 
-            '&pageName=Home' +  // Navigate to Home page (adjust page name if different)
-            '&filter=clearAll' + // Clear all filters
-            '&t=' + new Date().getTime(); // Cache-busting
+        // IMPORTANT: You need to get a FRESH embed URL from Power BI after updating your dashboard
+        // Go to Power BI → Your Dashboard → "..." menu → "Publish to web" → Copy the new embed URL
+        const dashboardUrl = "https://app.powerbi.com/view?r=eyJrIjoiZDlmYTFkNzctM2RlNS00Y2QzLWI1OTktMzEyMGUwYjE3NTQ1IiwidCI6IjVkZjdiZmU4LWM2NmUtNDQ2NS05YTZiLTc2MzZmZDVjNmRkOCIsImMiOjZ9";
         
         const iframe = document.getElementById('powerbi-dashboard');
-        iframe.src = dashboardUrl;
-        
-        // Reload iframe every 30 seconds to ensure latest version (optional)
-        // setInterval(() => {
-        //     iframe.src = dashboardUrl.replace(/&t=\d+/, '&t=' + new Date().getTime());
-        // }, 30000);
+        // Add cache-busting to force refresh
+        iframe.src = dashboardUrl + '&t=' + new Date().getTime();
     </script>
 
     <div class="footer">
